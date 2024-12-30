@@ -56,6 +56,7 @@ header p {
 }
 
 /* Navigation Bar */
+/* Navigation Bar */
 .navbar {
   background-color: #3b5998; /* Muted blue background */
   padding: 10px 0;
@@ -128,4 +129,30 @@ footer {
   background-color: #3b5998;
   color: white;
   font-size: 0.9em;
+}
+/* Research Interests Section */
+#research-interests {
+  padding: 20px;
+  background-color: #f9f9f9; /* Subtle background */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#research-interests h2 {
+  color: #3b5998;
+  margin-bottom: 10px;
+}
+
+#research-interests ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#research-interests li {
+  margin-bottom: 10px;
+}
+
+#research-interests li strong {
+  color: #3b5998; /* Match theme color */
 }
