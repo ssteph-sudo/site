@@ -41,69 +41,64 @@
     </div>
   </header>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="section-container">
-      <div style="width: 150px; height:169px; background-image: url('me3.jpeg'); background-size: cover; border-radius: 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></div>
-      <div class="section-text">
-        <p>
-          Hi, I’m Stephanie Murray, a second-year Master’s student in Computer Science at the University of Washington Bothell. My research focuses on <strong>machine learning</strong>, <strong>data analysis</strong>, and <strong>quantum computing</strong>, with a particular interest in applying these techniques to healthcare and neuroscience.
-        </p>
-        <p>
-          My thesis explores the use of quantum machine learning for classifying EEG signals, aiming to improve accuracy and efficiency in processing complex datasets. I’m also working on an independent project that combines quantum feature generation with deep learning for medical imaging.
-        </p>
-        <p>
-          I enjoy working on meaningful problems, learning from new ideas, and exploring creative solutions in computer science that can have a positive impact.
-        </p>
-      </div>
+<!-- About Me Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="section-container">
+    <div style="width: 150px; height:169px; background-image: url('me3.jpeg'); background-size: cover; border-radius: 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"></div>
+    <div class="section-text">
+      <p>
+        Hi, I’m Stephanie Murray, a researcher and PhD student in Computer Science at the University of Hawai‘i at Mānoa. My work focuses on <strong>machine learning</strong>, <strong>data analysis</strong>, and <strong>algorithm development</strong>, with research interests in large-scale biological datasets and phylogenetic methods.
+      </p>
+      <p>
+        I have experience developing analytical pipelines for complex datasets, including work in biomedical signal processing during my master’s thesis. I’m interested in creating computational approaches that make challenging, high-dimensional data more accessible and interpretable.
+      </p>
+      <p>
+        I enjoy working on meaningful problems, learning from new ideas, and exploring creative solutions in computer science that can have a positive impact.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Research Interests Section -->
-  <section id="research-interests">
-    <h2>Research Interests</h2>
-    <div class="section-container">
-      <img src="research.jpeg" alt="Research Interests" class="section-img">
-      <div class="section-text">
-        <ul>
-          <li><strong>Quantum Computing:</strong> Exploring hybrid quantum-classical algorithms for applications in machine learning and medical imaging.</li>
-          <li><strong>Machine Learning:</strong> Developing models for classification, prediction, and feature extraction in complex datasets.</li>
-          <li><strong>High-Performance Computing (HPC):</strong> Using parallel computing techniques and GPU acceleration (CUDA) to improve computational efficiency for large-scale problems.</li>
-          <li><strong>Data Analysis:</strong> Investigating methods to handle small or imbalanced datasets, including synthetic data generation and feature engineering.</li>
-          <li><strong>Neuroscience Applications:</strong> Applying computational techniques to analyze complex signals like EEG data.</li>
-        </ul>
-      </div>
+<!-- Research Interests Section -->
+<section id="research-interests">
+  <h2>Research Interests</h2>
+  <div class="section-container">
+    <img src="research.jpeg" alt="Research Interests" class="section-img">
+    <div class="section-text">
+      <ul>
+        <li><strong>Computational Biology:</strong> Developing algorithms and analytical methods for large-scale biological datasets, with a focus on phylogenetics and environmental DNA (eDNA).</li>
+        <li><strong>Machine Learning:</strong> Designing and evaluating models for classification, prediction, and pattern discovery in complex, high-dimensional data.</li>
+        <li><strong>High-Performance Computing (HPC):</strong> Leveraging parallel computing and GPU acceleration to improve efficiency in data-intensive workflows.</li>
+        <li><strong>Data Analysis:</strong> Exploring techniques to address small, sparse, or imbalanced datasets through feature engineering and statistical modeling.</li>
+        <li><strong>Biomedical & Life Sciences Applications:</strong> Applying computational methods to datasets from neuroscience, genomics, and environmental monitoring.</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
   
-    <!-- Thesis Project -->
-    <div class="section-container">
-      <img src="circuit_diagram.png" alt="Thesis Project" class="section-img">
-      <div class="section-text">
-        <h3>Masters Thesis: "Exploring Quantum Machine Learning Enhanced Models for EEG Data Classification"</h3>
-        <p>
-          My thesis investigates the application of <strong>Variational Quantum Circuits (VQCs)</strong> for classifying EEG signals. This work integrates quantum computing methods to enhance signal analysis, focusing on feature extraction and classification performance for neuroscience applications.
-        </p>
-        <p><strong>Methods Used:</strong> Variational Quantum Circuits, classical preprocessing (e.g., Fourier transforms), and gradient-based optimization algorithms for training quantum models.</p>
-      </div>
+  <!-- Thesis Project -->
+  <div class="section-container">
+    <img src="circuit_diagram.png" alt="Thesis Project" class="section-img">
+    <div class="section-text">
+      <h3>UW Master’s Thesis (Completed June 25): "Exploring Quantum Machine Learning-Enhanced Models for EEG Data Classification"</h3>
+      <p>
+        This 103-page thesis investigates the application of <strong>Variational Quantum Circuits (VQCs)</strong> for classifying EEG signals. The work integrates quantum computing methods with classical preprocessing to improve classification performance for movement-related brain activity, using both simulation and real quantum hardware tests.
+      </p>
+      <p>
+        Across 40 experimental runs, the VQC achieved higher precision and recall than a tuned Random Forest baseline, demonstrating that compact quantum models can match or exceed classical pipelines for certain biomedical signal processing tasks.
+      </p>
+      <p><strong>Methods Used:</strong> Variational Quantum Circuits, classical preprocessing (band-pass filtering, PCA, CSP), and gradient-free optimization (COBYLA) for training quantum models.</p>
+      <p>
+        Full thesis available via <a href="https://www.proquest.com/docview/3230034471" target="_blank">ProQuest Abstract</a>. Publication expected January 2026.
+      </p>
     </div>
-  
-    <!-- Independent Project: Quantum-Enhanced CNN -->
-    <div class="section-container">
-      <img src="segmentation.png" alt="Medical Imaging Project" class="section-img">
-      <div class="section-text">
-        <h3>Independent Project: "Quantum-Enhanced Convolutional Neural Networks for Liver Tumor Classification: An Exploratory Hybrid Approach"</h3>
-        <p>
-          This project investigates a hybrid approach combining quantum feature generation with <strong>Convolutional Neural Networks (CNNs)</strong> for liver tumor detection using CT scans. The focus is on improving classification performance in small, imbalanced datasets.
-        </p>
-        <p><strong>Methods Used:</strong> Quantum kernel feature extraction, CNN-based classification, synthetic data augmentation using SMOTE to address class imbalance, and stratified splits for training and testing while maintaining class distribution.</p>
-      </div>
-    </div>
+  </div>
+
   
     <!-- CUDA Gaussian Blur -->
     <div class="section-container">
