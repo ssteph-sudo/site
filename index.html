@@ -27,7 +27,7 @@
       <div class="background-image"></div>
       <div class="header-text">
         <h1>Stephanie Murray</h1>
-        <p>Computer Science Master's Student | Researcher</p>
+        <p>Computer Science Researcher & PhD Student | Researcher</p>
       </div>
       <nav class="navbar">
         <ul>
@@ -77,9 +77,42 @@
   </div>
 </section>
 
+<section id="news">
+<h2>News</h2>
+<div class="section-container">
+<img src="/assets/poster-thumb.jpg" alt="Poster thumbnail" class="section-img" />
+<div class="section-text">
+<h3>SC25 Poster Accepted</h3>
+<p>
+My master’s thesis poster (Quantum ML for EEG classification) has been accepted to <strong>Supercomputing 2025 (SC25)</strong>. I’ll be presenting results comparing variational quantum circuits to a tuned Random Forest baseline.
+</p>
+<p>
+<em>Preview:</em> See the small thumbnail above. I’ll share the full poster PDF after the conference.
+</p>
+</div>
+</div>
+</section>
+
   <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
+
+    <!-- SHARD-DB -->
+<div class="section-container">
+<img src="/assets/shard-db.png" alt="SHARD‑DB diagram" class="section-img" />
+<div class="section-text">
+<h3>SHARD‑DB: Sequence Hashing for Amplicon Reference Databases - Ongoing</h3>
+<p>
+SHARD‑DB is a fast, reproducible workflow for building locus‑specific metabarcoding reference databases (e.g., COI, 12S, ITS). It replaces slow alignment‑based expansion with <strong>hash‑sketch retrieval</strong> (k‑mer hashing & locality‑sensitive hashing), then applies biological filters (primer anchoring, expected amplicon length) and taxonomy annotation.
+</p>
+<p>
+Current work benchmarks SHARD‑DB against CRUX on coverage, unique taxa, BLAST recall, and compute cost, targeting scalable reference DB builds for the Asia‑Pacific eDNA community.
+</p>
+<ul>
+
+</ul>
+</div>
+</div>
   
   <!-- Thesis Project -->
   <div class="section-container">
@@ -100,17 +133,7 @@
   </div>
 
   
-    <!-- CUDA Gaussian Blur -->
-    <div class="section-container">
-      <img src="blur_effect.png" alt="Gaussian Blur Optimization" class="section-img">
-      <div class="section-text">
-        <h3>BlurEffect: GPU-Accelerated Gaussian Blur Optimization</h3>
-        <p>
-          Designed a CUDA-based Gaussian blur algorithm that achieves significant performance gains for image processing. Integrated the implementation into a custom-built Qt-based GUI for real-time visualization and batch processing.
-        </p>
-        <p><strong>Methods Used:</strong> CUDA parallel programming, GPU kernel optimization, and real-time rendering with Qt framework.</p>
-      </div>
-    </div>
+
   
     <!-- EyeBelieve VR Assistive Technology -->
     <div class="section-container">
@@ -126,15 +149,18 @@
   </section>
 
   <!-- Conferences Section -->
-  <section id="conferences">
-    <h2>Conferences</h2>
-    <div class="section-container">
-      <img src="sc24.png" alt="Conference SC24" class="section-img">
-      <div class="section-text">
-        <p>
-          I attended and volunteered at <strong>Supercomputing 2024 (SC24)</strong>, a premier international conference on high-performance computing, quantum computing, networking, and storage. 
-    </div>
-  </section>
+<section id="conferences">
+<h2>Conferences</h2>
+<div class="section-container">
+<img src="sc24.png" alt="SC24 volunteer badge" class="section-img" />
+<div class="section-text">
+<ul>
+<li><strong>SC25</strong> — Poster presenter (accepted), Quantum ML for EEG classification.</li>
+<li><strong>SC24</strong> — Attendee & student volunteer; focus areas: HPC & quantum computing.</li>
+</ul>
+</div>
+</div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact">
