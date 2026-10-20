@@ -58,7 +58,7 @@
       </p>
       <p></p>
         <p>
-        Updated: April 2026
+        Updated: October 2026
     </div>
   </div>
 </section>
@@ -135,10 +135,17 @@ Received the <a href="https://www.c-maiki.org/post/mahimicrobe2025-award-results
         <div class="section-text">
           <h3>SHARD-DB: Scalable Hash-Based Approximate Retrieval for High-Throughput Reference Database Construction - Ongoing in 2026</h3>
           <p>
-            Under the supervision of Dr. Lenore Pipes at UH Mānoa, I designed and developed SHARD-DB, a bioinformatics and high-performance computing system for constructing marker-specific reference databases from very large nucleotide collections. Rather than using repeated alignment-first BLAST expansion, SHARD-DB indexes reference sequences with densified MinHash sketches and locality-sensitive hashing (LSH) to retrieve broad candidate neighborhoods, then performs targeted locus localization to identify and refine marker regions for downstream database construction. The implementation is designed to reduce repeated data movement through compact posting lists, query-directed metadata access, memory mapping, shared reference-region processing, and bounded-memory execution. Current results show that performance is strongly marker-dependent: on a full NCBI NT MiFish workload, SHARD-DB used substantially less peak memory than CRUX-style merged BLAST while retrieving approximately 12× more unique candidate accessions, providing a richer pool of sequences for reference-database construction. Historical matched-subset experiments with MarVer3 16S and PR2 18S also showed large runtime advantages for SHARD-DB. Additional SHARD-only candidates have been independently evaluated using semi-global Needleman-Wunsch alignment, and ongoing work is focused on characterizing retrieval sensitivity, precision, and parameter choices across marker families. SHARD-DB remains active, unpublished research, with a journal manuscript in preparation.
+            Under the supervision of Dr. Lenore Pipes at UH Mānoa, I designed and developed SHARD-DB, a bioinformatics and high-performance computing system for constructing marker-specific reference databases from very large nucleotide collections.
           </p>
-          <ul>
-          </ul>
+          <p>
+            Rather than using repeated alignment-first BLAST expansion, SHARD-DB indexes reference sequences with densified MinHash sketches and locality-sensitive hashing (LSH) to retrieve broad candidate neighborhoods, then performs targeted locus localization to identify and refine marker regions for downstream database construction. The implementation is designed to reduce repeated data movement through compact posting lists, query-directed metadata access, memory mapping, shared reference-region processing, and bounded-memory execution.
+          </p>
+          <p>
+            Current results show that performance is strongly marker-dependent: on a full NCBI NT MiFish workload, SHARD-DB used substantially less peak memory than CRUX-style merged BLAST while retrieving approximately 12× more unique candidate accessions, providing a richer pool of sequences for reference-database construction. Historical matched-subset experiments with MarVer3 16S and PR2 18S also showed large runtime advantages for SHARD-DB.
+          </p>
+          <p>
+            Additional SHARD-only candidates have been independently evaluated using semi-global Needleman-Wunsch alignment, and ongoing work is focused on characterizing retrieval sensitivity, precision, and parameter choices across marker families. SHARD-DB remains active, unpublished research, with a journal manuscript in preparation.
+          </p>
         </div>
         <img src="Genomic analysis with candidate loci.png" alt="SHARD-DB genomic analysis with candidate loci" class="section-img">
       </div>
