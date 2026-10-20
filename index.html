@@ -68,6 +68,17 @@
 <section id="news">
 <h2>News</h2>
 <div class="section-container">
+<a href="https://sc26.conference-program.com/presentation/?id=rpost189&amp;sess=sess313" target="_blank" rel="noopener noreferrer">
+<img src="SC26_MurrayS_Poster_Thumbnail_600px_under100KB.jpg" alt="Thumbnail of the SHARD-DB SC26 research poster" class="section-img" />
+</a>
+<div class="section-text">
+<h3>November 2026 — SC26 poster presentation</h3>
+<p>
+My research poster, <em>SHARD-DB: Scalable Hash-Based Retrieval for High-Throughput Reference Database Construction</em>, has been accepted for presentation at <a href="https://sc26.conference-program.com/presentation/?id=rpost189&amp;sess=sess313" target="_blank" rel="noopener noreferrer"><strong>Supercomputing 2026 (SC26)</strong></a> in Chicago. I will present this new bioinformatics and high-performance computing work during the research poster session on November 17. This project is distinct from the quantum machine learning research I presented at SC25.
+</p>
+</div>
+</div>
+<div class="section-container">
 <a href="https://sc25.conference-program.com/presentation/?id=post280&amp;sess=sess527" target="_blank" rel="noopener noreferrer">
 <img src="/sc25poster.png" alt="Poster thumbnail" class="section-img" />
 </a>
@@ -120,16 +131,17 @@ Received the <a href="https://www.c-maiki.org/post/mahimicrobe2025-award-results
 
     <!-- SHARD-DB (text left, image right) -->
     <div class="section-container">
-      <div class="section-text">
-        <h3>SHARD‑DB: Scalable Hash-Based Approximate Retrieval for High-Throughput Reference Database Construction - Ongoing in 2026</h3>
-        <p>
-          Under the supervision of Dr. Lenore Pipes at UH Manoa I have designed and developed SHARD-DB. SHARD-DB is an alignment-free reference database construction project for large nucleotide collections. The work is a combination of bioinformatics and high-performance computing, with a focus on making database generation more scalable than traditional BLAST-heavy approaches. Instead of relying on exhaustive expansion and downstream filtering, SHARD-DB uses a retrieval-first strategy to identify promising regions efficiently before refining candidate loci for database construction. The broader goal is to make reference database building faster and more practical for high-throughput metabarcoding workflows. Full methodological details are still in preparation, but early results are promising. My initial results suggest that SHARD-DB significantly reduces runtime relative to existing reference database construction pipelines while maintaining practical utility for high-throughput workflows. Currently in final testing.
-        </p>
-        <ul>
-        </ul>
+      <div class="section-container">
+        <div class="section-text">
+          <h3>SHARD-DB: Scalable Hash-Based Approximate Retrieval for High-Throughput Reference Database Construction - Ongoing in 2026</h3>
+          <p>
+            Under the supervision of Dr. Lenore Pipes at UH Mānoa, I designed and developed SHARD-DB, a bioinformatics and high-performance computing system for constructing marker-specific reference databases from very large nucleotide collections. Rather than using repeated alignment-first BLAST expansion, SHARD-DB indexes reference sequences with densified MinHash sketches and locality-sensitive hashing (LSH) to retrieve broad candidate neighborhoods, then performs targeted locus localization to identify and refine marker regions for downstream database construction. The implementation is designed to reduce repeated data movement through compact posting lists, query-directed metadata access, memory mapping, shared reference-region processing, and bounded-memory execution. Current results show that performance is strongly marker-dependent: on a full NCBI NT MiFish workload, SHARD-DB used substantially less peak memory than CRUX-style merged BLAST while retrieving approximately 12× more unique candidate accessions, providing a richer pool of sequences for reference-database construction. Historical matched-subset experiments with MarVer3 16S and PR2 18S also showed large runtime advantages for SHARD-DB. Additional SHARD-only candidates have been independently evaluated using semi-global Needleman-Wunsch alignment, and ongoing work is focused on characterizing retrieval sensitivity, precision, and parameter choices across marker families. SHARD-DB remains active, unpublished research, with a journal manuscript in preparation.
+          </p>
+          <ul>
+          </ul>
+        </div>
+        <img src="Genomic analysis with candidate loci.png" alt="SHARD-DB genomic analysis with candidate loci" class="section-img">
       </div>
-      <img src="Genomic analysis with candidate loci.png" alt="SHARD-DB genomic analysis with candidate loci" class="section-img">
-    </div>
   
   <!-- Thesis Project -->
   <div class="section-container">
